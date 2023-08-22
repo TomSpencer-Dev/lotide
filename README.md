@@ -2,4 +2,4 @@
 
 ## Summary
 
-This repository contains a JS libray built by Tom Spencer similar to Lodash.
+This repository contains a JS library built by Tom Spencer similar to Lodash.
