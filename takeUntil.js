@@ -32,12 +32,9 @@ const takeUntil = function(array, callback) {
 
 const data1 = [100, 55, 697, 546, 986, 42, 5];
 const results1 = takeUntil(data1, x => x > 700);
-console.log(results1);
 
 const data2 = ["together", "we", 5, "can"];
 const results2 = takeUntil(data2, x => Number.isInteger(x));
-console.log(results2);
-
 
 assertArraysEqual(results1, [100, 55, 697, 546]);
 assertArraysEqual(results2, ["together", "we"]);

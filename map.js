@@ -30,7 +30,8 @@ const map = function(array, callback) {
 
 const results1 = map(words, word => word[0]);
 const results2 = map(words, word => words.indexOf(word));
-//const results3 = map(words, word => word[0]);
+const results3 = map(words, () => "foo");
 
 assertArraysEqual(results1, [ 'g', 'c', 't', 'm', 't' ]);
 assertArraysEqual(results2, [ 0, 1, 2, 3, 4]);
+assertArraysEqual(results3, [ 'foo', 'foo', 'foo', 'foo', 'foo' ]);
