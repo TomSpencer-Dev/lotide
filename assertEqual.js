@@ -2,20 +2,16 @@
 const assertEqual = function(actual, expected) {
   if (Array.isArray(expected)) {
     for (let i = 0; i < actual.length; i++) {
-      if (actual[i] !== expected[i]) {
-        console.log(`😒 Assertion Failed: ${actual} !==  ${expected}`);
-        return;
+      if (actual[i] !== expected[i]) {  
+        return false;
       }
-      console.log(`😃 Assertion Passed: ${actual} === ${expected}`);
-      return;
+      return true;
     }
   } else {
     if (actual !== expected) {
-      console.log(`😒 Assertion Failed: ${actual} !==  ${expected}`);
-      return;
+      return false;
     }
-    console.log(`😃 Assertion Passed: ${actual} === ${expected}`);
-    return;
+    return true;
 
   }
 };

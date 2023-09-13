@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@nodetom/lotide",
   "version": "1.0.0",
-  "description": "## Summary",
+  "description": "## A mini clone of the [Lodash](https://lodash.com) library",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "mocha"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/TomSpencer-Dev/lotide.git"
   },
-  "author": "",
+  "author": "Tom Spencer",
   "license": "ISC",
   "bugs": {},
   "dependencies": {},
